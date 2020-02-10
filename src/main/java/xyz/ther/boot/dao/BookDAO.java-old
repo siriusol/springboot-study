@@ -1,0 +1,13 @@
+package xyz.ther.boot.dao;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import xyz.ther.boot.pojo.Book;
+
+import java.util.List;
+
+public interface BookDAO extends MongoRepository<Book, Integer> {
+
+    List<Book> findByAuthorContains(String author);
+
+    Book findByNameEquals(String name);
+}

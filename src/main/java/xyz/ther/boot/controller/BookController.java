@@ -9,6 +9,9 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import xyz.ther.boot.dao.BookDAO;
  */
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import xyz.ther.boot.config.MyConfig;
@@ -20,11 +23,12 @@ import java.util.*;
 @EnableConfigurationProperties
 public class BookController {
 
-    /*
+
     @Autowired
     RedisTemplate redisTemplate;
     @Autowired
     StringRedisTemplate stringRedisTemplate;
+    /*
     @Autowired
     BookDAO bookDAO;
     @Autowired
@@ -65,9 +69,9 @@ public class BookController {
         return String.valueOf(id);
     }
 
-    /**
+
     @GetMapping("/redisTest")
-    public void redisTest() {
+    public String redisTest() {
         ValueOperations<String, String> ops1 = stringRedisTemplate.opsForValue();
         ops1.set("name", "SpringBoot 实战");
         String name = ops1.get("name");
@@ -80,8 +84,10 @@ public class BookController {
         ops2.set("book", book);
         Book returnBook = (Book) ops2.get("book");
         System.out.println(book);
+        return book.toString();
     }
 
+    /**
     @GetMapping("/mongodbTest1")
     public void mongodbTest1() {
         List<Book> bookList = new ArrayList<>();

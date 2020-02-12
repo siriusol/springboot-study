@@ -33,16 +33,6 @@ public class BookController {
     @Autowired
     MyConfig myConfig;
 
-    @GetMapping("/hello")
-    public String hello(String name) {
-        return "Hello " + name + " !";
-    }
-
-    @GetMapping("/hello2")
-    public String hello2() {
-        return "Hello2";
-    }
-
     @GetMapping("/book")
     public Book book() {
         Book book = new Book();
@@ -66,7 +56,7 @@ public class BookController {
     }
 
     @PostMapping("/book")
-    public String addBook(@RequestBody Book book) {
+    public String addBook(Book book) {
         return book.toString();
     }
 

@@ -1,5 +1,5 @@
 package xyz.ther.boot.config;
-
+/*
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -158,3 +158,4 @@ public class WebSecurityConfig {
         }
     }
 }
+*/

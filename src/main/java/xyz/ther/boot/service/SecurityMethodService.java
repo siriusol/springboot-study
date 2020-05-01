@@ -1,5 +1,6 @@
 package xyz.ther.boot.service;
 
+/*
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
@@ -22,3 +23,4 @@ public class SecurityMethodService {
         return "Hello user!";
     }
 }
+*/

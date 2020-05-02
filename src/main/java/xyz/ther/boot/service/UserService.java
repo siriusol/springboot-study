@@ -7,7 +7,7 @@ public class UserService {
 
     public String getUserById(Integer id) {
         System.out.println("get...");
-        return "user";
+        return "user" + id;
     }
 
     public void deleteUserById(Integer id) {

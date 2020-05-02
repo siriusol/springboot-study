@@ -1,5 +1,5 @@
 package xyz.ther.boot.jms;
-
+/*
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsMessagingTemplate;
@@ -26,3 +26,4 @@ public class JmsComponent {
         System.out.println("receive:" + message);
     }
 }
+*/

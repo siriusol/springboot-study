@@ -1,5 +1,5 @@
 package xyz.ther.boot.jms;
-
+/*
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -14,3 +14,4 @@ public class QueueBean {
         return new ActiveMQQueue("amq");
     }
 }
+*/

@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import xyz.ther.boot.pojo.Message;
 
 import java.util.Date;
-
+/*
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ActiveMQTest {
@@ -24,3 +24,4 @@ public class ActiveMQTest {
         jmsComponent.send(message);
     }
 }
+*/
